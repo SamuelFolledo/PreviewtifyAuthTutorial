@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var codeVerifier: String = ""
     var responseTypeCode: String? {
         didSet {
             fetchSpotifyToken { (dictionary, error) in
